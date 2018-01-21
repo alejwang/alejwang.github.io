@@ -3790,7 +3790,8 @@
 	}
 
 		#footer > * {
-			width: calc(50% - 2em);
+			width: 50%;
+			/* width: calc(50% - 2em); */
 			/* margin-left: 2em; */
 		}
 
@@ -3800,7 +3801,11 @@
 			font-size: 0.5em;
 			text-align: right;
 			color: #ccc;
+		}
 
+		#footer .right {
+			text-align: right;
+			float: right;
 		}
 
 		@media screen and (max-width: 1280px) {
