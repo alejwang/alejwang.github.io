@@ -11,8 +11,8 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="../assets/css/works.css" />
-	<link rel="stylesheet" href="../assets/css/font.css" />
+	<link rel="stylesheet" href="../assets/css/works.css">
+	<link rel="stylesheet" href="../assets/css/font.css">
 	<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
 	<script src="../assets/js/jquery.min.js"></script>
@@ -23,23 +23,28 @@
 	<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="../assets/js/works.js"></script>
 	<link rel="stylesheet" href="../assets/css/preloader.css">
-	<script src="../assets/js/plugins.js"></script>
 	<script src="../assets/js/main.js"></script>
+
 </head>
 
 <body>
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="loader" class="mobile"></div>
+	</div>
 
 	<!-- Wrapper -->
 	<div id="wrapper">
 
 		<!-- Header -->
-		<header id="header" class="alt">
+		<header id="header" class="alt mobile">
 			<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
 
 			<h1>Redefine School Lifestyle</h1>
 			<p>Introducing QSC Mobile - an everyday calendar app designed for university students <br> to organize their academic calendar and find more club activities in leisure life.<br> Check it out on <a href="https://itunes.apple.com/app/qiu-shi-chaomobile/id583334920">App Store</a>.</p>
 		</header>
-		<section id="header-img" class="main">
+		<section id="header-img" class="main mobile">
 			<span class="image main"><img src="images/mobile_header.png" alt="" /></span>
 		</section>
 
@@ -265,10 +270,9 @@
 			<section id="closerlook" class="main">
 				<h2>_closer look</h2>
 				<h3>from courses in the moring <br>to activities at the night, <br>Mobile will be with you in every moment</h3>
-				<div class="row">
-					<div class="10u -2u 12u$(medium)">
-						<iframe width="853" height="480" src="https://www.youtube.com/embed/24HFhpKGtkQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</div>
+
+				<div class="iframe-container">
+					<iframe width="853" height="480" src="https://www.youtube.com/embed/24HFhpKGtkQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" class="iframe-video" allowfullscreen></iframe>
 				</div>
 				<hr>
 				<h3>our interaction design <br>is made more quick and intuitive </h3>
@@ -361,16 +365,18 @@
 		<!-- Footer -->
 
 		<footer id="footer">
-			<p><a href="../index.html">< back to home</a></p>
+			<p>
+				<a href="../index.html">
+					< back to home</a>
+			</p>
 			<p class="right"> <a href="../smartpill/">next project: Smartpill ></a> </p>
 
 			<p class="copyright">&copy; Alejandro. Special thanks to <a href="https://html5up.net">HTML5 UP</a>.</p>
 		</footer>
 
-		<div id="preloader">
-			<div id="loader"></div>
-		</div>
+
 	</div>
+
 </body>
 
 </html>

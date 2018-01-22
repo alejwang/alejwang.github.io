@@ -23,17 +23,21 @@
 	<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="../assets/js/works.js"></script>
 	<link rel="stylesheet" href="../assets/css/preloader.css">
-	<script src="../assets/js/plugins.js"></script>
 	<script src="../assets/js/main.js"></script>
 </head>
 
 <body>
 
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="loader" class="inforest"></div>
+	</div>
+
 	<!-- Wrapper -->
 	<div id="wrapper">
 
 		<!-- Header -->
-		<header id="header" style="background-color:#C6BDAC;" class="alt">
+		<header id="header" class="inforest alt">
 			<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
 			<h1>Everyone in the haze <br>has a dream of forest</h1>
 			<p>InForest - a forest-like space with botanic interactive system <br>arousing urban people the sensation of the forest. <br></p>
@@ -176,10 +180,8 @@
 			<!-- Prototype -->
 			<section id="prototype" class="main">
 				<h2>_prototype</h2>
-				<div class="row">
-					<div class="9u$ -3u 12u$(medium)">
-						<iframe src="https://player.vimeo.com/video/202718376?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					</div>
+				<div class="iframe-container">
+						<iframe src="https://player.vimeo.com/video/202718376?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="iframe-video"></iframe>
 				</div>
 				<hr>
 				<h3>thanks for our engineer friend, <br>we designed and made incredible interaction units that <br>can mount lots of plants with the watering system</h3>
@@ -239,7 +241,10 @@
 
 		<!-- Footer -->
 		<footer id="footer">
-			<p><a href="../index.html">< back to home</a></p>
+			<p>
+				<a href="../index.html">
+					< back to home</a>
+			</p>
 			<p class="right"> <a href="../mobile/">next project: QSC Mobile ></a> </p>
 
 			<p class="copyright">&copy; Alejandro. Special thanks to <a href="https://html5up.net">HTML5 UP</a>.</p>

@@ -1,5 +1,6 @@
 /*
 	Stellar by HTML5 UP
+	Modified by Alejandro
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -21,14 +22,14 @@
 			$body = $('body'),
 			$main = $('#main');
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
-
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+		// // Disable animations/transitions until the page has loaded.
+		// 	$body.addClass('is-loading');
+    //
+		// 	$window.on('load', function() {
+		// 		window.setTimeout(function() {
+		// 			$body.removeClass('is-loading');
+		// 		}, 100);
+		// 	});
 
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
@@ -59,7 +60,10 @@
 						});
 
 				// Links.
-					var $nav_a = $nav.find('a');
+					var $nav_a = $('a[href*="#"]')
+  					// Remove links that don't actually link to anything
+  					.not('[href="#"]')
+  					.not('[href="#0"]');
 
 					$nav_a
 						.scrolly({

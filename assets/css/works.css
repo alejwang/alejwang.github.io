@@ -3884,3 +3884,43 @@
 			}
 
 		}
+
+
+/* IFrame */
+	.iframe-container {
+		position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+	}
+
+	.iframe-video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+
+
+
+	.smartpill {
+		background-color: #F1FAF6 !important;
+	}
+
+	.black-bg {
+		background-color: #111;
+	}
+
+	.grey {
+		color: #ccc;
+	}
+
+	.inforest {
+		background-color: #C6BDAC !important;
+	}
+
+	.mobile {
+		background-color: #F2F9FF !important;
+	}
