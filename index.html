@@ -4,7 +4,7 @@
 <head>
   <title>_alejandro</title>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Type" content="text/html">
   <meta name="description" content="Alejandro Wang Portfolio">
   <meta name="author" content="Alejandro Wang">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,7 +19,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/main.js"></script>
-  <script src="./assets/js/works.js"></script>
+  <!-- <script src="./assets/js/works.js"></script> -->
 </head>
 
 <body>
@@ -61,9 +61,9 @@
 
             <div class="card">
               <div class="card-header" id="mobile-title">
-                <h2 class="mb-0" href="#mobile-info" data-toggle="collapse" data-target="#mobile-info" aria-expanded="false" aria-controls="mobile-info">Qiushichao Mobile</h2>
+                <h2 class="mb-0" data-toggle="collapse" data-target="#mobile-info" aria-expanded="false" aria-controls="mobile-info">Qiushichao Mobile</h2>
               </div>
-              <div id="mobile-info" class="collapse" aria-labelledby="mobile-title" data-parent="#worklist" alt="./images/mobile-banner.png">
+              <div id="mobile-info" class="collapse" aria-labelledby="mobile-title" data-parent="#worklist" data-image="./images/mobile-banner.png">
                 <div class="card-body">
                   <h3>_intro</h3>
                   <p>Everyday calendar app designed for university students <br> to organize their academic calendar and find more club activities in leisure life <br> launched in 2016</p>
@@ -82,7 +82,7 @@
               <div class="card-header" id="smartpill-title">
                 <h2 class="mb-0" data-toggle="collapse" data-target="#smartpill-info" aria-expanded="false" aria-controls="smartpill-info">SmartPill</h2>
               </div>
-              <div id="smartpill-info" class="collapse" aria-labelledby="smartpill-title" data-parent="#worklist" alt="./images/smartpill-banner.png">
+              <div id="smartpill-info" class="collapse" aria-labelledby="smartpill-title" data-parent="#worklist" data-image="./images/smartpill-banner.png">
                 <div class="card-body">
                   <h3>_intro</h3>
                   <p>Pocket pharmacist app strategy design with martketing plan <br>for busy patients and chronic disease patients</p>
@@ -101,7 +101,7 @@
               <div class="card-header" id="inforest-title">
                 <h2 class="mb-0" data-toggle="collapse" data-target="#inforest-info" aria-expanded="false" aria-controls="inforest-info">InForest Space</h2>
               </div>
-              <div id="inforest-info" class="collapse" aria-labelledby="inforest-title" data-parent="#worklist" alt="./images/inforest-banner.png">
+              <div id="inforest-info" class="collapse" aria-labelledby="inforest-title" data-parent="#worklist" data-image="./images/inforest-banner.png">
                 <div class="card-body">
                   <h3>_intro</h3>
                   <p>Interactive artifact and space design<br>to invoke dreams of forest in heavy city mist</p>
@@ -120,7 +120,7 @@
               <div class="card-header" id="animal-title">
                 <h2 class="mb-0" data-toggle="collapse" data-target="#animal-info" aria-expanded="false" aria-controls="animal-info">The Edge : Animal Shelter Design</h2>
               </div>
-              <div id="animal-info" class="collapse" aria-labelledby="animal-title" data-parent="#worklist" alt="./images/edge-banner.png">
+              <div id="animal-info" class="collapse" aria-labelledby="animal-title" data-parent="#worklist" data-image="./images/edge-banner.png">
                 <div class="card-body">
                   <h3>_intro</h3>
                   <p>Start with a view of animals <br>make an shelter for us animals <br>all the way from fund to adoption </p>
@@ -139,14 +139,14 @@
               <div class="card-header" id="civicrm-title">
                 <h2 class="mb-0" data-toggle="collapse" data-target="#civicrm-info" aria-expanded="false" aria-controls="civicrm-info">CiviCRM<sup>nz</sup></h2>
               </div>
-              <div id="civicrm-info" class="collapse" aria-labelledby="civicrm-title" data-parent="#worklist">
+              <div id="civicrm-info" class="collapse" aria-labelledby="civicrm-title" data-parent="#worklist" data-image="./images/civicrm-banner.png">
                 <div class="card-body">
                   <h3>_intro</h3>
                   <p>Consulting with Neutral Zone and reshaping experiences of tracking members and programs in CiviCRM system</p>
                   <h3>_duration</h3>
                   <p>9/ 2017 - 12/ 2017 </p>
                   <h3>_course</h3>
-                  <p>SI501, University of Michigan</p>
+                  <p>Contextual Inquiry and Consulting Foundations, University of Michigan</p>
                   <h3>_scope</h3>
                   <p>User Research, Consulting</p>
                   <a class="upcoming" href="#">Upcoming soon...</a>
@@ -178,7 +178,7 @@
               <div class="card-header" id="about-title">
                 <h2 class="mb-0" data-toggle="collapse" data-target="#about-info" aria-expanded="false" aria-controls="about-info">Alejandro Wang</h2>
               </div>
-              <div id="about-info" class="collapse" aria-labelledby="about-title" data-parent="#worklist" alt="./images/about-banner.png">
+              <div id="about-info" class="collapse" aria-labelledby="about-title" data-parent="#worklist" data-image="./images/about-banner.png">
                 <div class="card-body">
                   <h3>_intro</h3>
                   <p>A synthesized project I've been working on for 24 years... all right you catch ME! <br> Hey, my name is Zhen Wang. My friends call me Alejandro. </p>
@@ -216,53 +216,54 @@
 
       </div>
     </div>
-    <div id="preloader">
-      <div id="loader"></div>
-    </div>
+  </div>
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-        setTimeout(function() {
-          $(".background").fadeIn(000);
-        }, 1000)
+  <script type="text/javascript">
+    $(document).ready(function() {
+      setTimeout(function() {
+        $(".background").fadeIn(000);
+      }, 1000)
+    });
+
+    function preload(arrayOfImages) {
+      $(arrayOfImages).each(function() {
+        $('<img/>')[0].src = this;
+        // Alternatively you could use:
+        // (new Image()).src = this;
       });
+    }
 
-      function preload(arrayOfImages) {
-        $(arrayOfImages).each(function() {
-          $('<img/>')[0].src = this;
-          // Alternatively you could use:
-          // (new Image()).src = this;
-        });
+    preload([
+      "./images/mobile-banner.png",
+      "./images/smartpill-banner.png",
+      "./images/inforest-banner.png",
+      "./images/edge-banner.png",
+      "./images/about-banner.png"
+    ]);
+
+    function showAboutInfo() {
+      $('#about-info').collapse('show');
+    }
+
+    $('.collapse').on('hide.bs.collapse', function() {
+      var styles = {
+        backgroundImage: 'url("./images/blank-banner.png")'
       }
+      $(".background").css(styles);
+      $("#" + $(this).attr('aria-labelledby') + " > h2").removeClass('word-highlighted');
 
-      preload([
-        "./images/mobile-banner.png",
-        "./images/smartpill-banner.png",
-        "./images/inforest-banner.png",
-        "./images/edge-banner.png",
-        "./images/about-banner.png"
-      ]);
-
-      function showAboutInfo() {
-        $('#about-info').collapse('show');
+    })
+    $('.collapse').on('shown.bs.collapse', function() {
+      var styles = {
+        backgroundImage: 'url(' + $(this).attr('data-image') + ')'
       }
-
-      $('.collapse').on('hide.bs.collapse', function() {
-        var styles = {
-          backgroundImage: 'url("./images/blank-banner.png")'
-        }
-        $(".background").css(styles);
-        $("#" + $(this).attr('aria-labelledby') + " > h2").removeClass('word-highlighted');
-
-      })
-      $('.collapse').on('shown.bs.collapse', function() {
-        var styles = {
-          backgroundImage: 'url(' + $(this).attr('alt') + ')'
-        }
-        $(".background").css(styles);
-        $("#" + $(this).attr('aria-labelledby') + " > h2").addClass('word-highlighted');
-      })
-    </script>
+      $(".background").css(styles);
+      $("#" + $(this).attr('aria-labelledby') + " > h2").addClass('word-highlighted');
+    })
+  </script>
 </body>
 
 </html>
