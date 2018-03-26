@@ -14,7 +14,7 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-size: 99%;
+		font-size: 98%;
 		font-family: 'DINRound', Helvetica, sans-serif;
 		vertical-align: baseline;
 	}
@@ -1762,19 +1762,21 @@
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.4em;
 	}
 
 
 	h3 {
-		font-size: 2em;
+		font-size: 2.5em;
+		font-style: italic;
+		font-weight: 200;
 		/* line-height: 1.5em; */
 		margin: 0 0 3.5em 0;
 	}
 
 	h4 {
 		font-size: 1.5em;
-		font-weight: 600;
+		/* font-weight: 600; */
 		margin-bottom: 1em;
 		z-index: 1000;
 		position: relative;
@@ -2512,7 +2514,7 @@
 
 		.image.main {
 			display: block;
-			margin: -5em 0 0 0;
+			margin: -3em 0 0 0;
 			width: 100%;
 		}
 
@@ -3182,7 +3184,7 @@
 		}
 
 		#header p {
-			font-size: 1.25em;
+			font-size: 1em;
 			letter-spacing: -0.025em;
 		}
 
@@ -3191,7 +3193,9 @@
 		}
 
 			#header.alt h1 {
-				font-size: 2.5em;
+				font-size: 4em;
+				font-style: italic;
+				font-weight: 200;
 			}
 
 			#header.alt > * {
@@ -3927,4 +3931,8 @@
 
 	.mobile {
 		background-color: #F2F9FF !important;
+	}
+
+	.edge {
+		background-color: #E7F0F8 !important;
 	}
