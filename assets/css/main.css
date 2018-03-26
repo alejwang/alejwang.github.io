@@ -73,6 +73,7 @@ h2 {
   font-style: italic;
   line-height: 0.98em;
   display: inline-block;
+  cursor: pointer;
 }
 
 h2 span {
@@ -130,6 +131,10 @@ h3 span {
   /* background-color: #E5E5E5; */
 }
 
+.upcoming {
+  text-decoration: line-through;
+  color: #999;
+}
 
 /* -------- Decoration -------- */
 
