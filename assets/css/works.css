@@ -14,7 +14,7 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-size: 98%;
+		font-size: 99%;
 		font-family: 'DINRound', Helvetica, sans-serif;
 		vertical-align: baseline;
 	}
@@ -1620,6 +1620,7 @@
 
 		html, body {
 			min-width: 320px;
+			font-size: 100%;
 		}
 		h1 br {
 			content: ' ';
@@ -3929,7 +3930,7 @@
 		background-color: #C6BDAC !important;
 	}
 
-	.mobile {
+	.mobile, .civicrm {
 		background-color: #F2F9FF !important;
 	}
 
