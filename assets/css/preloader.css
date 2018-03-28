@@ -1,36 +1,36 @@
-#preloader {
+#preloader-container {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: #fff;
-  z-index: 800;
+  z-index: 1000;
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
 
-.no-js #preloader, .oldie #preloader {
+.no-js #preloader-container, .oldie #preloader-container {
   display: none;
 }
 
-#loader {
+#preloader {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 60px;
-  height: 60px;
-  margin-left: -30px;
-  margin-top: -30px;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
   padding: 0;
-  background-color: #999;
+  background-color: #aaa;
   border-radius: 100%;
-  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-  animation: sk-scaleout 1.0s infinite ease-in-out;
+  -webkit-animation: scaleout 1.0s infinite ease-in-out;
+  animation: scaleout 1.0s infinite ease-in-out;
 }
 
-@-webkit-keyframes sk-scaleout {
+@-webkit-keyframes scaleout {
   0% {
     -webkit-transform: scale(0);
   }
@@ -39,7 +39,7 @@
     opacity: 0;
   }
 }
-@keyframes sk-scaleout {
+@keyframes scaleout {
   0% {
     -webkit-transform: scale(0);
     transform: scale(0);
