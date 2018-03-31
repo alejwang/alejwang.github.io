@@ -1,6 +1,6 @@
 "use strict";
 
-var ssPreloader = function() {
+var Preloader = function() {
 
   $(window).on('load', function() {
 
@@ -19,6 +19,6 @@ var ssPreloader = function() {
   });
 };
 
-(function ssInit() {
-  ssPreloader();
+(function Init() {
+  Preloader();
 })();
