@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>InForest _ alejandro.wang</title>
+	<title>InForest | alejandro</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -49,30 +49,25 @@
 
 		<!-- Header -->
 		<header>
-			<div class="slogan">
-				<h2>InForest : <br> Everyone in the haze <br>has a dream of forest</h2>
-				<p>A forest-like space with botanic interactive system arousing urban people the sensation of the forest. <br></p>
+			<div class="image banner"><img src="images/header.png" alt="" />
+				<div class="slogan">
+					<h2>InForest : Everyone in the haze <br> has a dream of forest</h2>
+					<p>A forest-like space with botanic interactive system arousing urban people the sensation of the forest. <br></p>
+				</div>
 			</div>
 		</header>
 
 		<!-- Nav -->
-		<nav>
-			<div class="nav-desc">
-				<p class="float-left">designed by</p>
-				<p class="float-right">process</p>
-			</div>
-			<div class="nav-tab">
-				<a class="float-left" href="http://alej.wang">_ alejandro.wang</a>
-				<ul class="float-right">
+		<nav id="nav">
+			<a class="nav-home" href="http://alej.wang">_ alejandro.wang</a>
+				<ul class="nav-tab">
 					<li><a href="#intro" class="active">intro</a></li>
 					<li><a href="#tech_research">tech research</a></li>
 					<li><a href="#conception">conception</a></li>
 					<li><a href="#prototype">prototype</a></li>
 					<li><a href="#result">result</a></li>
 				</ul>
-			</div>
 		</nav>
-
 
 		<section id="info">
 			<div class="row">
@@ -254,7 +249,23 @@
 
 	</div>
 
+	<script>
 
+	var stickyOffsetTop = $('#nav').offset().top;
+
+	$(window).bind('scroll', function () {
+	    if ($(window).scrollTop() > stickyOffsetTop) {
+	        $('#nav').addClass('sticky');
+					$('#nav').css('background-color', '#ffffff');
+					$('#nav').css('padding', '0 5em');
+	    } else {
+	        $('#nav').removeClass('sticky');
+					$('#nav').css('background-color', '#transparent');
+					$('#nav').css('padding', '0 2.5em');
+	    }
+	});
+
+	</script>
 </body>
 
 </html>

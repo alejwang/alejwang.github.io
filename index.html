@@ -256,7 +256,15 @@
 
     $('#handleAbout').click(function() {
       $('#about-info').collapse('show');
-    })
+    });
+
+    $('.card-header').mouseover(function() {
+      $(this).children().addClass('word-underlined');
+    });
+
+    $('.card-header').mouseout(function() {
+      $(this).children().removeClass('word-underlined');
+    });
 
     $('.collapse').on('hide.bs.collapse', function() {
       var styles = {
@@ -265,7 +273,7 @@
       $(".background").css(styles);
       $("#" + $(this).attr('aria-labelledby') + " > h2").removeClass('word-underlined');
 
-    })
+    });
 
     $('.collapse').on('shown.bs.collapse', function() {
       var styles = {
@@ -273,7 +281,7 @@
       }
       $(".background").css(styles);
       $("#" + $(this).attr('aria-labelledby') + " > h2").addClass('word-underlined');
-    })
+    });
 
   </script>
 </body>
