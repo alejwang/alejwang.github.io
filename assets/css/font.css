@@ -31,7 +31,7 @@
   font-family: 'DINRound';
   font-weight: 600;
   font-style: normal;
-  src: url(../fonts/DINRoundCompPro-Medium.ttf) format("truetype"), url(../fonts/DINRoundCompPro-Medium.woff) format("woff")
+  src: url(../fonts/DINRoundCompPro-Medium.ttf) format("truetype")
 }
 
 * {

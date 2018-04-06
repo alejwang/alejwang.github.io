@@ -9,15 +9,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="format-detection" content="telephone=no">
 
-  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/font.css">
-  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/font.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="./assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <script src="../assets/js/main.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116480014-1"></script>
@@ -39,7 +38,7 @@
     <div id="preloader"></div>
   </div>
 
-  <div class="background">
+  <div class="background about">
   </div>
 
   <header>
@@ -47,10 +46,15 @@
       _
       <span class="word-covered">alejandro.wang</span>
     </h1>
+    <div id="sidenav-trigger">
+      <i  class="fas fa-bars"></i>
+    </div>
   </header>
 
-
-  <nav>
+  <nav id="sidenav">
+    <div id="sidenav-close">
+      <i class="fas fa-arrow-left"></i>
+    </div>
     <ul>
       <li><a href="./index.html">home</a></li>
       <li><a href="./works.html">works</a></li>
@@ -59,6 +63,15 @@
     </ul>
   </nav>
 
+  <div class="content">
+    <nav>
+      <ul>
+        <li><a href="./index.html">home</a></li>
+        <li><a href="./works.html">works</a></li>
+        <li><a href="./about.html" class="active">about</a></li>
+        <li><a href="./resume.html">resume</a></li>
+      </ul>
+    </nav>
   <div id="right-container">
     <div class="card">
       <h2>Before</h2>
@@ -79,13 +92,15 @@
       </div>
       <h2>Next</h2>
       <div class="card-body">
-        <p>Looking for an internship!</strong> Design for me is a curve line with points on it. Instead of drawing tons of points in random order or drawing one point at the time, going through the beautiful line is what I want to achieve.</p>
+        <p><strong>Looking for an internship!</strong> Design for me is a curve line with points on it. Instead of drawing tons of points in random order or drawing one point at the time, going through the beautiful line is what I want to achieve.</p>
         <p>
           I'm graduating in <strong>April 2019</strong> and looking for open and fun people to work with in summer 2018!</p>
         <a class="word-colored-orange" href="mailto:alejwang@umich.edu?subject=Hello">Say HI!</a>
       </div>
     </div>
   </div>
+  <div class="push"></div>
+</div>
 
   <!-- left down with decoration -->
   <div id="left-decoration">
@@ -93,8 +108,12 @@
   </div>
 
   <footer>
-    <p>© Alejandro</p>
+    <p>© Alejandro | Follow me </p>
+    <a href="https://www.instagram.com/alejwang/"> <i class="fab fa-instagram"></i></a>
+    <a href="https://www.github.com/alejwang"> <i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/alejwang"> <i class="fab fa-linkedin-in"></i></a>
   </footer>
+
 
 </body>
 
