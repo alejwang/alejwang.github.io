@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: #999999;
+  color: #888888;
   text-decoration: none;
   border-bottom: dotted 1px;
   -webkit-transition: color 0.3s;
@@ -157,7 +157,8 @@ nav .active {
   color: black;
 }
 
-#sidenav {
+nav#sidenav {
+  display: none;
   height: 100%;
   width: 0;
   position: fixed;
@@ -202,7 +203,7 @@ nav .active {
   nav {
     display: none;
   }
-  #sidenav {
+  nav#sidenav {
     display: block;
   }
   #sidenav-trigger {
@@ -378,7 +379,7 @@ footer {
 }
 
 footer>p {
-  color: #aaaaaa;
+  color: #888888;
   letter-spacing: 1px;
   display: inline-block;
 }
