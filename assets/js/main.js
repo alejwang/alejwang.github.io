@@ -29,22 +29,42 @@ $(document).ready(function() {
     $(".background").fadeIn(1000);
   }, 1000);
 
+  // Handler for about
+  $('#handleAbout').click(function() {
+    $('#about-info').collapse('show');
+    $('html, body').animate({
+      scrollTop: "500px"
+    }, 1000);
+  });
+
+  // Handler for about
+  $('#sideLinkToAbout').click(function() {
+    $('#about-info').collapse('show');
+    $('html, body').animate({
+      scrollTop: "300px"
+    }, 1000);
+    $('#sidenav').css('width', '-=250px');
+    $("#right-container, header, footer").css({
+      "margin-left": "-=250px",
+      "opacity": "1"
+    });
+  });
 
   // Sidebar menu
-  $('#sidenav-trigger').click(function(){
-    $('#sidenav').css('width','+=250px');
+  $('#sidenav-trigger').click(function() {
+    $('#sidenav').css('width', '+=250px');
     $("#right-container, header, footer").css({
       "margin-left": "+=250px",
       "opacity": "0.3"
     });
   });
-  $('#sidenav-close').click(function(){
-    $('#sidenav').css('width','-=250px');
+  $('#sidenav-close').click(function() {
+    $('#sidenav').css('width', '-=250px');
     $("#right-container, header, footer").css({
       "margin-left": "-=250px",
       "opacity": "1"
+    });
   });
-});
 
   // Preload images
   function preload(arrayOfImages) {
@@ -52,18 +72,24 @@ $(document).ready(function() {
       $('<img/>')[0].src = this;
     });
   }
-  preload([
-    "http://alej.wang/images/mobile-banner.png",
-    "http://alej.wang/images/smartpill-banner.png",
-    "http://alej.wang/images/inforest-banner.png",
-    "http://alej.wang/images/edge-banner.png",
-    "http://alej.wang/images/civicrm-banner.png",
-    "http://alej.wang/images/about-banner.png"
-  ]);
+
+  // preload([
+  //   "http://alej.wang/images/mobile-banner.png",
+  //   "http://alej.wang/images/smartpill-banner.png",
+  //   "http://alej.wang/images/inforest-banner.png",
+  //   "http://alej.wang/images/edge-banner.png",
+  //   "http://alej.wang/images/civicrm-banner.png",
+  //   "http://alej.wang/images/about-banner.png"
+  // ]);
 
   // Handler for about
   $('#handleAbout').click(function() {
     $('#about-info').collapse('show');
+  });
+
+  // Handler for mix
+  $('.mix span').click(function() {
+    $('.collapse').collapse('hide');
   });
 
   // Card animation

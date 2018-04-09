@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: #999999;
+  color: #888888;
   text-decoration: none;
   border-bottom: dotted 1px;
   -webkit-transition: color 0.3s;
@@ -29,12 +29,12 @@ a {
   transition: color 0.3s;
 }
 
-a:hover, footer a:hover svg path {
+a:hover, .title-covered:hover, footer a:hover svg path {
   color: #FB973A;
   text-decoration: none;
 }
 
-p {
+p, span {
   color: #666666;
   font-size: 0.9em;
   overflow-wrap: break-word;
@@ -50,12 +50,17 @@ p {
 h1 {
   font-weight: 600;
   letter-spacing: -0.025em;
-  line-height: 1.2em;
-  font-size: 1.2em;
-  margin-left: -0.8em;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  margin-left: -0.66em;
   color: #444444;
   display: inline-block;
   white-space: nowrap;
+  transition: color 0.3s;
+}
+
+h1 a {
+  border: 0;
 }
 
 /* _ alejandro.wang */
@@ -99,12 +104,17 @@ header {
   transition: all 0.5s ease;
 }
 
-.word-covered {
+.title-covered {
   position: relative;
   white-space: nowrap;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
-.word-covered:before {
+.title-covered:before {
   bottom: 7.5%;
   content: '';
   height: 30%;
@@ -112,8 +122,22 @@ header {
   opacity: .9;
   position: absolute;
   right: 0;
-  /* background: #FB973A; */
-  background: linear-gradient(to right, #FB973A, yellow);
+  background: #FB973A;
+}
+
+#self-intro {
+  width: calc((100vw - 2em - 30px)*3/4 - 50vw);
+  left: 50%;
+  padding-top: 6em;
+  margin-bottom: 30vh;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  #self-intro {
+    left: 35%;
+    width: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -122,42 +146,20 @@ header {
     margin-bottom: 5em;
     width: 100%;
   }
+  #self-intro {
+    display: none;
+  }
 }
 
 /* -------- Nav -------- */
 
-nav {
-  width: 50%;
-  left: 50%;
-  padding-top: 6em;
-  margin-bottom: 40vh;
-  position: relative;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding-right: 0.6em;
-}
-
-nav ul li a {
-  font-size: 1.1em;
-  line-height: 1.2em;
-  letter-spacing: -0.025em;
-  font-weight: 600;
-  border: 0;
-}
-
-nav .active {
+nav ul li a.active {
   color: black;
+  border-bottom: 1px solid #cccccc;
 }
 
-#sidenav {
+nav#sidenav {
+  display: none;
   height: 100%;
   width: 0;
   position: fixed;
@@ -192,31 +194,24 @@ nav .active {
   margin-bottom: 2em;
 }
 
-@media (max-width: 1200px) {
-  nav {
-    left: 35%;
-  }
-}
-
 @media (max-width: 768px) {
   nav {
     display: none;
   }
-  #sidenav {
+  nav#sidenav {
     display: block;
   }
   #sidenav-trigger {
     display: block;
   }
-
 }
 
 /* -------- Container Positioning -------- */
+
 .content {
   min-height: 100vh;
   margin-bottom: -3em;
 }
-
 
 #right-container {
   width: calc(50% + 10em);
@@ -233,7 +228,20 @@ nav .active {
   margin: 2em 0;
 }
 
-.timestamp, .category {
+.category {
+  width: auto;
+  display: block;
+  letter-spacing: 0.2em;
+  opacity: 0.5;
+  margin: 3em 0 1em 10em;
+}
+
+.category span.control {
+  border-bottom: 1px dotted #cccccc;
+  cursor: pointer;
+}
+
+.timestamp {
   font-size: 0.8em;
   width: 12.5em;
   float: left;
@@ -262,10 +270,12 @@ hr {
     width: calc(65% + 8em);
     left: calc(35% - 8em);
   }
-  .timestamp, .category {
+  .timestamp {
     width: 10em;
   }
-
+  .category {
+    margin-left: 8em;
+  }
   .description {
     margin-left: 8em;
     width: calc( 100% - 8em);
@@ -284,9 +294,12 @@ hr {
     left: auto;
     padding-left: 3em;
   }
-  .timestamp, .category {
+  .timestamp {
     width: auto;
     float: none;
+  }
+  .category {
+    margin-left: 0;
   }
   .description {
     margin-left: 0;
@@ -297,8 +310,6 @@ hr {
     border: 0.5px solid grey;
   }
 }
-
-
 
 /* -------- Card Rewrite -------- */
 
@@ -332,6 +343,7 @@ hr {
     margin-left: 8em;
   }
 }
+
 @media (max-width: 768px) {
   .card {
     margin-left: 0;
@@ -341,6 +353,7 @@ hr {
     padding-right: 1em;
   }
 }
+
 /* -------- Button Rewrite -------- */
 
 .btn-primary {
@@ -365,6 +378,7 @@ hr {
 /* -------- Footer -------- */
 
 .push {
+  margin-top: 150px;
   height: 50px;
 }
 
@@ -381,12 +395,17 @@ footer>p {
   color: #aaaaaa;
   letter-spacing: 1px;
   display: inline-block;
+  opacity: 0.8;
 }
 
 footer>a {
   border: 0;
   padding: 0 0.2em;
-  opacity: 0.4;
+  opacity: 0.2;
+}
+
+footer>a:hover {
+  opacity: 1;
 }
 
 @media (max-width: 1200px) {
@@ -408,8 +427,6 @@ footer>a {
   }
 }
 
-
-
 /* -------- Decoration -------- */
 
 .background {
@@ -419,7 +436,7 @@ footer>a {
   left: calc(1.5em + 15px);
   top: 3.5em;
   background-image: url("../../images/blank-banner.png");
-  background-color: rgba(0,0,0,0.05);
+  background-color: rgba(0, 0, 0, 0.05);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -466,13 +483,13 @@ footer>a {
   margin-left: 3em;
   z-index: 100;
   bottom: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 @media (max-width: 1200px) {
   .background {
     height: 60vh;
-    background-color: rgba(0,0,0,0.067);
+    background-color: rgba(0, 0, 0, 0.067);
     opacity: 0.75;
   }
 }
@@ -483,13 +500,14 @@ footer>a {
     height: 100%;
     left: calc(0.5em + 15px);
     top: auto;
-    background-color: rgba(0,0,0,0.167);
+    background-color: rgba(0, 0, 0, 0.167);
     opacity: 0.3;
   }
   #left-decoration {
     display: none;
   }
 }
+
 /* -------- Preloader -------- */
 
 #preloader-container {
@@ -543,14 +561,5 @@ footer>a {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 0;
-  }
-}
-
-/* -------- Mobile View Media -------- */
-
-
-@media (min-width: 1200px) {
-  .work-card {
-    /* height: 300px; */
   }
 }
