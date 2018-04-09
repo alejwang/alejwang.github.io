@@ -366,6 +366,7 @@ hr {
   padding-right: 15px;
   color: #FB973A;
   font-weight: 400;
+  margin-bottom: 0.5em;
 }
 
 .btn-primary:hover, .btn-primary:active {
