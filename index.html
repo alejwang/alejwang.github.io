@@ -58,7 +58,7 @@
       </div> -->
 
       <div class="category mix all">
-        <span>_MOBILE</span>
+        <span>_UI/UX</span>
       </div>
       <div class="card mix selected all">
         <div class="card-header" id="mobile-title">
@@ -113,6 +113,25 @@
             <h3>_scope</h3>
             <p>Market Research, Business Process Design, Strategy, UI Design</p>
             <a class="btn btn-primary" href="./smartpill/" role="button"> Read More > </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mix all">
+        <div class="card-header" id="clip-title">
+          <h2 tabindex="0" class="mb-0" data-toggle="collapse" data-target="#clip-info" aria-expanded="false" aria-controls="clip-info">Clip</h2>
+        </div>
+        <div id="clip-info" class="collapse" aria-labelledby="clip-title" data-parent="#right-container" data-image="./images/blank-banner.png">
+          <div class="card-body">
+            <h3>_intro</h3>
+            <p>Efficient new tech to design collaboration</p>
+            <h3>_duration</h3>
+            <p>Ongoing </p>
+            <!-- <h3>_course</h3>
+            <p>Chinese Business Culture and Entrepreneurship, Zhejiang University</p> -->
+            <h3>_scope</h3>
+            <p>Interaction Design, Prototype</p>
+            <a class="btn btn-primary" href="./clip/" role="button"> Read More > </a>
           </div>
         </div>
       </div>
@@ -254,6 +273,22 @@
       });
       mixer.filter('.selected');
     })
+
+    // Preload images
+    function preload(arrayOfImages) {
+      $(arrayOfImages).each(function() {
+        $('<img/>')[0].src = this;
+      });
+    }
+
+    preload([
+      "http://alej.wang/images/mobile-banner.png",
+      "http://alej.wang/images/smartpill-banner.png",
+      "http://alej.wang/images/inforest-banner.png",
+      "http://alej.wang/images/edge-banner.png",
+      "http://alej.wang/images/civicrm-banner.png",
+      "http://alej.wang/images/about-banner.png"
+    ]);
   </script>
 
 </body>

@@ -66,21 +66,6 @@ $(document).ready(function() {
     });
   });
 
-  // Preload images
-  function preload(arrayOfImages) {
-    $(arrayOfImages).each(function() {
-      $('<img/>')[0].src = this;
-    });
-  }
-
-  preload([
-    "http://alej.wang/images/mobile-banner.png",
-    "http://alej.wang/images/smartpill-banner.png",
-    "http://alej.wang/images/inforest-banner.png",
-    "http://alej.wang/images/edge-banner.png",
-    "http://alej.wang/images/civicrm-banner.png",
-    "http://alej.wang/images/about-banner.png"
-  ]);
 
   // Handler for about
   $('#handleAbout').click(function() {
