@@ -13,7 +13,7 @@ html, body {
 body {
   padding: 0px;
   margin: 0px;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
   background-color: #ffffff;
 }
