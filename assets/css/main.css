@@ -1,13 +1,15 @@
 /* -------- General -------- */
 
 * {
-  color: #333333;
+  color: #BBB;
   -webkit-font-smoothing: antialiased;
+
 }
 
 html, body {
   min-height: 100vh;
-  overflow: scroll;
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
 }
 
 body {
@@ -15,7 +17,7 @@ body {
   margin: 0px;
   overflow-y: hidden;
   overflow-x: hidden;
-  background-color: #ffffff;
+  background-color: #16171B;
 }
 
 a {
@@ -35,8 +37,8 @@ a:hover, .title-covered:hover, footer a:hover svg path {
 }
 
 p, span {
-  color: #666666;
-  font-size: 0.9em;
+  color: #888;
+  font-size: 0.95em;
   overflow-wrap: break-word;
   line-height: 1.6em;
 }
@@ -49,14 +51,17 @@ p, span {
 
 h1 {
   font-weight: 600;
-  letter-spacing: -0.025em;
+  /* letter-spacing: 0.05em; */
   line-height: 1.5em;
   font-size: 1.5em;
-  margin-left: -0.66em;
-  color: #444444;
+  margin-left: -0.8em;
+  color: #999;
   display: inline-block;
   white-space: nowrap;
   transition: color 0.3s;
+}
+h1 span {
+  color: #999;
 }
 
 h1 a {
@@ -69,12 +74,23 @@ h2 {
   letter-spacing: -0.01em;
   text-align: left;
   /* padding-top: 0.4em; */
-  color: #444444;
-  font-size: 5em;
-  font-weight: 200;
-  font-style: italic;
+  color: #FFF;
+  font-size: 2.5em;
+  font-weight: 300;
   line-height: 1.1em;
   display: inline-block;
+  text-transform: uppercase;
+}
+
+h2 span {
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #FB973A;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.1em;
+  display: inline-block;
+  text-transform: uppercase;
 }
 
 /* Work Name */
@@ -89,6 +105,18 @@ h3 {
   text-align: left;
 }
 
+/* Hints */
+
+h4 {
+  /* letter-spacing: 0px; */
+  margin: 0.4em 0 0.6em 0;
+  color: #EEE;
+  font-size: 3.5em;
+  line-height: 1.2em;
+  /* font-weight: 400; */
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   h2 {
     font-size: 3em;
@@ -99,7 +127,7 @@ h3 {
 
 header {
   position: fixed;
-  padding: 6em 0 0 3em;
+  padding: 4em 0 0 3em;
   z-index: 100;
   transition: all 0.5s ease;
 }
@@ -115,11 +143,11 @@ header {
 }
 
 .title-covered:before {
-  bottom: 7.5%;
+  bottom: 5%;
   content: '';
-  height: 30%;
+  height: 10%;
   left: 0;
-  opacity: .9;
+  opacity: .8;
   position: absolute;
   right: 0;
   background: #FB973A;
@@ -209,18 +237,20 @@ nav#sidenav {
 /* -------- Container Positioning -------- */
 
 .content {
-  min-height: 100vh;
+  padding-top: 42vh;
+  width: 60%;
+  /* min-height: 100vh; */
   margin-bottom: -3em;
 }
 
-#right-container {
+/* #right-container {
   width: calc(50% + 10em);
   left: calc(50% - 10em);
   position: relative;
   padding-right: 2em;
   margin-bottom: 4em;
   transition: all 0.5s ease;
-}
+} */
 
 .experience {
   height: auto;
@@ -233,7 +263,7 @@ nav#sidenav {
   display: block;
   letter-spacing: 0.2em;
   opacity: 0.5;
-  margin: 3em 0 1em 10em;
+  margin: 3em 0 1em 3em;
 }
 
 .category span.control {
@@ -317,7 +347,7 @@ hr {
   background-color: transparent;
   border: 0;
   padding-bottom: 1em;
-  margin-left: 10em;
+  margin-left: 3em;
   position: relative;
 }
 
@@ -333,7 +363,7 @@ hr {
 
 .card-body {
   padding: 1em 3em 1em 0;
-  margin-left: 3em;
+  /* margin-left: 3em; */
   margin-bottom: 5em;
   /* background-color: #E5E5E5; */
 }
@@ -366,7 +396,12 @@ hr {
   padding-right: 15px;
   color: #FB973A;
   font-weight: 400;
-  margin-bottom: 0.5em;
+  /* margin-bottom: 0.5em; */
+  font-size: 1.1em;
+  /* line-height: 40px; */
+  /* text-transform: uppercase; */
+  min-width: 160px;
+  height: 40px;
 }
 
 .btn-primary:hover, .btn-primary:active {
@@ -384,16 +419,17 @@ hr {
 }
 
 footer {
-  width: 50%;
+  /* width: 50%; */
   height: 3em;
-  left: 50%;
+  left: 3.25em;
+  margin-bottom: 1em;
   font-size: 0.85em;
   transition: all 0.5s ease;
   position: relative;
 }
 
 footer>p {
-  color: #aaaaaa;
+  color: #666;
   letter-spacing: 1px;
   display: inline-block;
   opacity: 0.8;
@@ -402,7 +438,7 @@ footer>p {
 footer>a {
   border: 0;
   padding: 0 0.2em;
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 footer>a:hover {
@@ -431,13 +467,17 @@ footer>a:hover {
 /* -------- Decoration -------- */
 
 .background {
-  width: calc((100vw - 3.5em - 30px)*3/4);
-  height: calc(100vh - 3.5em);
+  /* width: calc((100vw - 3.5em - 30px)/2); */
+  width: 50%;
+  height: 100%;
+  right: 0;
+  /* height: calc(100vh - 2em); */
   position: fixed;
-  left: calc(1.5em + 15px);
-  top: 3.5em;
+  /* right: calc(1.5em + 15px); */
+  /* top: 1em; */
   background-image: url("../../images/blank-banner.png");
-  background-color: rgba(0, 0, 0, 0.05);
+  /* opacity: 0.6; */
+  background-color: #26282F;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -452,6 +492,22 @@ footer>a:hover {
 .upcoming {
   text-decoration: line-through;
   color: #999;
+  border: 1px solid #EEE;
+  background-color: transparent;
+  opacity: 0.8;
+  border-radius: 0;
+  /* text-decoration: none; */
+  padding-left: 15px;
+  padding-right: 15px;
+  /* color: #FB973A; */
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+  line-height: 40px;
+  /* text-transform: uppercase; */
+  width: 180px;
+  height: 40px;
+  text-align: center;
 }
 
 .card-header>h2:hover, .card-header>h2:hover sup, .card-header>h2:focus, .card-header>h2:focus sup {
@@ -464,11 +520,11 @@ footer>a:hover {
 }
 
 .word-underlined:before {
-  bottom: 0%;
+  bottom: 6%;
   content: '';
-  height: 20px;
+  height: 12px;
   left: 0;
-  opacity: .4;
+  opacity: .3;
   position: absolute;
   right: 0;
   background: #FB973A;
@@ -517,7 +573,7 @@ footer>a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #fff;
+  background: #000;
   z-index: 1000;
   height: 100%;
   width: 100%;
@@ -537,7 +593,7 @@ footer>a:hover {
   margin-left: -50px;
   margin-top: -50px;
   padding: 0;
-  background-color: #aaa;
+  background-color: #333;
   border-radius: 100%;
   -webkit-animation: scaleout 1.0s infinite ease-in-out;
   animation: scaleout 1.0s infinite ease-in-out;

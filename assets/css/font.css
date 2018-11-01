@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
 
 @font-face {
   font-family: 'DIN';
@@ -14,13 +15,24 @@
   src: url(../fonts/DINWeb.eot), url(../fonts/DINWeb.eot#iefix) format("embedded-opentype"), url(../fonts/DINWeb.woff) format("woff")
 }
 
+
 @font-face {
-  font-family: 'DIN';
-  font-weight: 600;
-  font-style: normal;
-  src: url(../fonts/DINWeb-Medium.eot), url(../fonts/DINWeb-Medium.eot#iefix) format("embedded-opentype"), url(../fonts/DINWeb-Medium.woff) format("woff")
+    font-family: 'FFDINWebPro';
+    src: url(../fonts/FFDINWebPro.eot);
+    src: url(../fonts/FFDINWebPro.eot?#iefix) format("embedded-opentype"), url(../fonts/FFDINWebPro.woff2) format("woff2"), url(../fonts/FFDINWebPro.woff) format("woff"), url(../fonts/FFDINWebPro.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal
 }
+
 @font-face {
+    font-family: 'FFDINWebProBold';
+    src: url(../fonts/FFDINWebProBold.eot);
+    src: url(../fonts/FFDINWebProBold.eot?#iefix) format("embedded-opentype"), url(../fonts/FFDINWebProBold.woff2) format("woff2"), url(../fonts/FFDINWebProBold.woff) format("woff"), url(../fonts/FFDINWebProBold.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+/* @font-face {
   font-family: 'DINRound';
   font-weight: 400;
   font-style: normal;
@@ -32,12 +44,14 @@
   font-weight: 600;
   font-style: normal;
   src: url(../fonts/DINRoundCompPro-Medium.ttf) format("truetype")
-}
+} */
 
 * {
-  font-family: 'PT Sans', -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  font-family: 'FFDINWebPro', -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  font-weight: 300;
 }
 
-h1, h1 span, h2, h2 sup, h3, h4, h4 a, h5, nav ul li a, .links a, .category {
-  font-family: 'DIN', -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+ h2 span, h3, h5, nav ul li a, .links a, .category {
+  font-family: 'FFDINWebProBold', -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  /* font-weight: 600; */
 }
