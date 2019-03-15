@@ -1,0 +1,29 @@
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+<script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+
+
+<a-scene cursor="rayOrigin: mouse" embedded arjs="sourceType: webcam; debugUIEnabled: false">
+
+<a-assets>
+  <a-asset-item id="pagoda" src="https://raw.githubusercontent.com/alejwang/alejwang.github.io/master/Models/Pagoda.gltf"  crossorigin="anonymous"></a-asset-item>
+  <a-asset-item id="tree" src="https://raw.githubusercontent.com/alejwang/alejwang.github.io/master/Models/apple_tree_02.gltf" crossorigin="anonymous"></a-asset-item>
+  <a-asset-item id="cloud" src="https://alejwang.github.io/Models/cloud_02.gltf" crossorigin="anonymous"></a-asset-item>
+
+
+</a-assets>
+<a-marker-camera preset="hiro">
+  <a-entity position="0 0 0" >
+     <a-text position="0.1 0 -0.4" rotation="-90 0 0" scale="0.3 0.3 0.3" color="black" value='Zhen Wang'></a-text>
+    <a-plane position="0 0 0" rotation="-90 0 0" width="1" height="1" color="#7a9e3e" shadow></a-plane>
+    <a-entity gltf-model="#pagoda" position="0  0 0" rotation="0 0 0" scale="0.02 0.02 0.02" event-set__mouseenter="scale: 0.018 0.018 0.018"
+event-set__mouseleave="scale: 0.02 0.02 0.02" animation="property: rotation; from: 0 0 0; to: 0 270 0; dur: 10000; startEvents: click"></a-entity>
+    <a-entity id="tree" gltf-model="#tree" position="-0.35 0 -0.35" scale="0.002 0.002 0.002"      event-set__mouseenter="scale: 0.0018 0.0018 0.0018"
+event-set__mouseleave="scale: 0.002 0.002 0.002"></a-entity>
+     <a-entity id="cloud" gltf-model="#cloud" position="-0.2 0.5 0.35"
+               scale="0.001 0.001 0.001" event-set__mouseenter="scale: 0.0009 0.0009 0.0009"
+event-set__mouseleave="scale: 0.001 0.001 0.001"   animation="property: position; from: -0.2 0.5 0.35; to: -0.4 0.8 -0.35; dur: 10000; startEvents: click"></a-entity>
+  </a-entity>
+</a-marker-camera>
+
+</a-scene>
