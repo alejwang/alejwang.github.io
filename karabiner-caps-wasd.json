@@ -1,0 +1,104 @@
+{
+  "title": "Use CAPS LOCK for vi navigation",
+  "rules": [{
+      "description": "CAPS LOCK + wasd to arrow keys",
+      "manipulators": [{
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "down_arrow"
+          }],
+          "conditions": [{
+            "type": "variable_if",
+            "name": "caps_lock pressed",
+            "value": 1
+          }]
+        }, {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "up_arrow"
+          }],
+          "conditions": [{
+            "type": "variable_if",
+            "name": "caps_lock pressed",
+            "value": 1
+          }]
+        }, {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "left_arrow"
+          }],
+          "conditions": [{
+            "type": "variable_if",
+            "name": "caps_lock pressed",
+            "value": 1
+          }]
+        }, {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "right_arrow"
+          }],
+          "conditions": [{
+            "type": "variable_if",
+            "name": "caps_lock pressed",
+            "value": 1
+          }]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [{
+            "set_variable": {
+              "name": "caps_lock pressed",
+              "value": 1
+            }
+          }],
+          "to_after_key_up": [{
+            "set_variable": {
+              "name": "caps_lock pressed",
+              "value": 0
+            }
+          }]
+        }
+      ]
+    }
+  ]
+}
